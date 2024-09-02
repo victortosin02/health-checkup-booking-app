@@ -6,20 +6,22 @@ const nextConfig = {
     optimizeFonts: false,
     images: {
         domains: [
+            // Uncomment and add any image domains you need
             // "user-images.githubusercontent.com",
             // "cdn.hashnode.com",
             // "github.com",
             // "drive.google.com",
-            // "raw.githubusercontent.com", // Correctly added this domain
+            // "raw.githubusercontent.com",
         ],
     },
-    fontLoaders: [{
-        // loader: "@next/font/google",
-        // options: {
-        //     subsets: ["latin"],
-        //     weight: ["400", "500", "600", "700", "800"],
-        // },
-    }, ],
+    // Remove fontLoaders if not in use
+    // fontLoaders: [{
+    //   loader: "@next/font/google",
+    //   options: {
+    //     subsets: ["latin"],
+    //     weight: ["400", "500", "600", "700", "800"],
+    //   },
+    // }],
 };
 
-module.exports = nextConfig;
+export default nextConfig;
